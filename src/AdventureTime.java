@@ -112,7 +112,26 @@ public class AdventureTime {
                 }
                 break;
             case "knife":
-                System.out.println("Nice! you chose the K-nife");
+                System.out.println("Nice! You chose the Kah-niff! What's the enchantment level on it?(1/5)");
+                input = sc.next();
+                if(input.equals("1")){
+                    System.out.println("1?!?! That's not even enough to slit a helpless child throat.");
+                    System.out.println("Want to try enchanting for the first time? (y/n)");
+                    input = sc.next();
+                    if(input.equals("y")){
+                        System.out.println("Abra Kadabra! My Knife will go Cha-Cha-Cha! ...");
+                        System.out.println("It fails miserably and the Kah-niff gets lodged in your knee. " +
+                                "And that's how your no longer an adventurer.");
+                        break;
+                    } else if(input.equals("n")){
+                        System.out.println("A Man... or Woman! of true intellect... A Zombie bites your face off.");
+                        break;
+                    }
+                }else if(input.equals("5")){
+                    System.out.println("ZOMG! LMAO! Time to PWN sum nubs. " +
+                            "Killing Rampage or Peaceful Slaughter? (k/p)");
+
+                }
         }
 
         System.out.println("Thanks for playing!");
